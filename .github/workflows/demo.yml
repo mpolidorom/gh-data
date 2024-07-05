@@ -24,7 +24,8 @@ jobs:
       - name: Install dependencies
         run: npm ci
       - name: Build website
-        run: npm run builddir
+        run: npm run build
+      - name : Upload Artifacts
         uses: actions/upload-artifact@v3
         with:
           name: dist-files #nome a caso
